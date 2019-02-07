@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MFoxGame.Views.OpeningPage">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout 
+            HorizontalOptions="Center" 
+            VerticalOptions="Start"
+            Orientation="Vertical">
+
+            <Image 
+                Source="movingMonst.gif" 
+                VerticalOptions="Center" 
+                HeightRequest="150"
+                HorizontalOptions="Fill"/>
+
+            <Label 
+                FontSize="Large"
+                Text="The Mellow Fox Game"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Choose Game"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Start New Game"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="NewGameButton_Command"/>
+
+            <Button Text="Resume Game at Level(x)"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                    Clicked="ResumeBattleButton_Command"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
